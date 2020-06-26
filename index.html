@@ -8,14 +8,13 @@
     <title>freeCodeCamp.org - Personal Porfolio</title>
 </head>
 <body>
-    <header id="banner">
-        <nav>
-            <a href="#welcome-section">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
     <main>
         <section id="welcome-section">
             <header class="welcome-header">
@@ -53,13 +52,13 @@
         <section id="projects">
             <h2>Some of my work</h2>
                 <section class="projects-grid">
-                    <a href="https://head-phono.netlify.app/" target="_blank">
+                    <a class="project-tile" href="https://head-phono.netlify.app/" target="_blank">
                         <img src="img/head-phono.jpg" alt="project image">
-                        <p class="project-title">Product Landing Page</p>
+                        <p>Product Landing Page</p>
                     </a>
-                    <a href="https://joshuahigginslawncare.com/" target="_blank">
+                    <a class="project-tile" href="https://joshuahigginslawncare.com/" target="_blank">
                         <img src="img/jhlc.jpg" alt="project image">
-                        <p class="project-title">Joshua Higgins Lawn Care</p>
+                        <p>Joshua Higgins Lawn Care</p>
                     </a>
                 </section>
         </section>
@@ -70,8 +69,8 @@
             </header>
             <section class="contact-links">
                 <p><a href="mailto:mattmhiggins4@gmail.com"><i class="fas fa-envelope fa-2x"></i>mattmhiggins4@gmail.com</a></p>
-                <p><a href="https://www.freecodecamp.org/paladinesdragon" class="profile-link" target="_blank">My freeCodeCamp Porfolio</a></p>
-                <p><a href="https://github.com/paladinesdragon" class="profile-link" target="_blank"><i class="fab fa-github fa-2x"></i>My GitHub</a></p>
+                <p><a href="https://www.freecodecamp.org/paladinesdragon" id="profile-link" target="_blank">My freeCodeCamp Porfolio</a></p>
+                <p><a href="https://github.com/paladinesdragon" target="_blank"><i class="fab fa-github fa-2x"></i>My GitHub</a></p>
                 <p><a href="https://www.linkedin.com/in/matthew-higgins-68871b158/" target="_blank"><i class="fab fa-linkedin fa-2x"></i>LinkedIn</a></p>
             </section>
         </section>
