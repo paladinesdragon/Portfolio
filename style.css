@@ -20,7 +20,6 @@ html {
 
 a {
     text-decoration:none;
-    color:var(--white);
 }
 
 a:hover {
@@ -29,6 +28,7 @@ a:hover {
 
 p {
     margin:0;
+    padding:5px 0;
 }
 
 ul {
@@ -47,9 +47,14 @@ h3 {
     font-size: 1.5rem;
 }
 
+img {
+    width:100%;
+    display:inline-block;
+}
+
 /*NAV*/
 
-header {
+#banner {
     background:#000;
     position:fixed;
     top:0;
@@ -61,11 +66,11 @@ header {
 
 nav {
     display:flex;
-    justify-content:flex-end;
+    justify-content:center;
 }
 
 nav a {
-    color:#e4e4e4;
+    color:var(--light-grey);
     font-size:1.7rem;
     margin-right:20px;
 }
@@ -80,22 +85,144 @@ nav a {
     color:var(--light-grey);
 }
 
+.welcome-header {
+    padding:20px;
+}
+
 #welcome-section h2 {
     color:var(--pink);
+    margin-top:20px;
 }
+
+/*SKILLZ*/
 
 #skills {
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
+    max-width:1100px;
+    margin:auto;
+    padding:50px;
+    text-align:center;
 }
 
+#skills h2 {
+    padding-bottom:20px;
+}
 
-#contact a:hover {
+.skills-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:2rem;
+    justify-items:center;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.skills hr {
+    margin-bottom:10px;
+}
+
+.skills p {
+    font-size: 1.2rem;
+}
+
+#software-skills img {
+    width:12rem;
+}
+
+#software-skills img:hover {
+    background-color:var(--light-grey);
+}
+
+.fa-html5 {
+    color:rgb(236, 81, 19);
+}
+
+.fa-css3-alt {
+    color:rgb(87, 147, 226);
+}
+
+.fa-js-square {
+    color:yellow;
+    background:var(--dark);
+    padding:0 3px 0 2px;
+    border-radius:.5rem;
+}
+
+.fa-git-square {
+    color:red;
+}
+
+/*WORK*/
+
+
+/*CONTACT*/
+
+#contact {
+    background:var(--dark);
+    padding:20px;
+    text-align:center;
+}
+
+.contact-header {
+    padding-bottom:20px;
+    color:var(--light-grey);
+}
+
+.contact-links {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    align-items:baseline;
+}
+
+.contact-links a {
+    color:var(--light-grey);
+    font-size:1.2rem;
+}
+
+.fa-github {
+    color:rgb(101, 101, 214);
+    background:white;
+    padding:2px 1px 0 1px;
+    border-radius:2px;
+}
+
+.fa-linkedin {
+    color:blue;
+    background:white;
+    padding:0 2px;
+    border-radius:2px;
+}
+
+.contact-links a:hover,
+.contact-links .fab:hover {
     color:var(--pink);
+}
+
+footer {
+    padding:1rem;
+    background:var(--black);
+    color:var(--light-grey);
+    border-top:2px solid var(--pink);
+    text-align:center;
 }
 
 @media only screen and (max-width:980px) {
     html {
         font-size:.8em;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    #banner {
+
+    }
+
+
+    
+    h1 {
+        font-size:3rem;
     }
 }

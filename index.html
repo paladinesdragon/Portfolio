@@ -8,7 +8,7 @@
     <title>freeCodeCamp.org - Personal Porfolio</title>
 </head>
 <body>
-    <header>
+    <header id="banner">
         <nav>
             <a href="#welcome-section">About</a>
             <a href="#skills">Skills</a>
@@ -18,44 +18,71 @@
     </header>
     <main>
         <section id="welcome-section">
-            <h1>I'm Matthew Higgins</h1>
-            <h2>an aspiring web and game developer</h2>
+            <header class="welcome-header">
+                <h1>I'm Matthew Higgins</h1>
+                <h2>an aspiring web and game developer</h2>
+            </header>
+            
         </section>
         <section id="skills">
-            <h2>Here are some of my skills</h2>
-                <div>
-                <h3>Hard Skills</h3>
-                    <ul>
-                        <li><i class="fab fa-html5 fa-3x"></i>HTML5</li>
-                        <li><i class="fab fa-css3-alt fa-3x"></i>CSS3</li>
-                        <li><i class="fab fa-js-square fa-3x"></i>JavaScript</li>
-                        <li><i class="fab fa-git-square fa-3x"></i>Git</li>
-                    </ul>
-                </div>
-                <div>
-                <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Project Management (Agile and Scrum)</li>
-                        <li>Conducting Project Consultations</li>
-                        <li>Writing Creative Briefs</li>
-                        <li>Scoping Work</li>
-                    </ul>
-                </div>
+            <h2>The things I know</h2>
+                <section class="skills-grid">
+                    <section id="code-skills" class="skills">
+                    <h3>Coding Experience</h3><hr>  
+                        <p><i class="fab fa-html5 fa-3x"></i>HTML5</p>
+                        <p><i class="fab fa-css3-alt fa-3x"></i>CSS3</p>
+                        <p><i class="fab fa-js-square fa-3x"></i>JavaScript</p>
+                        <p><i class="fab fa-git-square fa-3x"></i>Git</p>
+                    </section>
+                    <section id="software-skills" class="skills">
+                        <h3>Software Knowledge</h3><hr>
+                            <p><a href="https://www.figma.com/" target="_blank"><img src="img/figma.png" alt="figma logo"></a></p>
+                            <p><a href="https://www.gimp.org/" target="_blank"><img src="img/gimp.png" alt="gimp logo"></a></p>
+                            <p><a href="https://www.blender.org/" target="_blank"><img src="img/blender_logo.svg" alt="blender logo"></a></p>
+                    </section>
+                    <section id="other-skills" class="skills">
+                    <h3>Other Skills</h3><hr>
+                        <p>Image & Video Editing</p>
+                        <p>Project Management (Agile and Scrum)</p>
+                        <p>Conducting Project Consultations</p>
+                        <p>Writing Creative Briefs</p>
+                        <p>Scoping Work</p>
+                    </section>
+                </section>
         </section>
         <section id="projects">
-
+            <h2>Some of my work</h2>
+                <section class="projects-grid">
+                    <a href="">
+                        <img src="" alt="project image">
+                        <p class="project-title">Tribute Page</p>
+                    </a>
+                    <a href="https://head-phono.netlify.app/">
+                        <img src="" alt="project image">
+                        <p class="project-title">Product Landing Page</p>
+                    </a>
+                    <a href="https://joshuahigginslawncare.com/">
+                        <img src="" alt="project image">
+                        <p class="project-title">Joshua Higgins Lawn Care</p>
+                    </a>
+                </section> 
         </section>
         <section id="contact">
-            <h2>Let's grab a coffee...</h2>
-            <h3>and transform your passion into a network that engages others!</h3>
-            <a href=""></a><h4 mailto="mattmhiggins4@gmail.com">Email: mattmhiggins4@gmail.com</h4>
-            <a href=""></a><h4>My freeCodeCamp Porfolio</h4>
-            <a href=""></a><h4>My GitHub</h4>
-            <a href="https://www.linkedin.com/in/matthew-higgins-68871b158/"><i class="fab fa-linkedin fa-2x"></i></a><h4>Linkdin</h4>
+            <header class="contact-header">
+                <h2>Let's grab a coffee...</h2>
+                <h3>and discuss transforming your passion into a network that engages others!</h3>
+            </header>
+            <section class="contact-links">
+                <a href="mailto:mattmhiggins4@gmail.com"><i class="fas fa-envelope fa-2x"></i>mattmhiggins4@gmail.com</a>
+                <a href="https://www.freecodecamp.org/paladinesdragon" class="profile-link" target="_blank">My freeCodeCamp Porfolio</a>
+                <a href="https://github.com/paladinesdragon" class="profile-link" target="_blank"><i class="fab fa-github fa-2x"></i>My GitHub</a>
+                <a href="https://www.linkedin.com/in/matthew-higgins-68871b158/" target="_blank"><i class="fab fa-linkedin fa-2x"></i>LinkedIn</a>
+            </section>
         </section>
-        <footer>
-            <h4>&copy;2020 Matthew Higgins</h4>
-        </footer>
     </main>
+        <footer>
+            <h3>&copy;2020 Matthew Higgins</h3>
+        </footer>
+    
 </body>
 </html>
