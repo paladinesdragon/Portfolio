@@ -20,6 +20,7 @@ html {
 
 a {
     text-decoration:none;
+    color:var(--white);
 }
 
 a:hover {
@@ -49,7 +50,7 @@ h3 {
 
 img {
     width:100%;
-    display:inline-block;
+    display:block;
 }
 
 /*NAV*/
@@ -99,6 +100,8 @@ nav a {
 #skills {
     max-width:1100px;
     margin:auto;
+    margin-top:-40px;
+    border-top:40px solid transparent;
     padding:50px;
     text-align:center;
 }
@@ -109,7 +112,7 @@ nav a {
 
 .skills-grid {
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
     grid-gap:2rem;
     justify-items:center;
 }
@@ -154,14 +157,46 @@ i {
 }
 
 /*WORK*/
+#projects {
+    padding:50px;
+    background:var(--light-grey);
+    text-align:center;
+    margin-top:-40px;
+    border-top:40px solid transparent;
+}
 
+#projects h2 {
+    padding-bottom:20px;
+}
+
+.projects-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap:4rem;
+    max-width:1100px;
+    margin:auto;
+}
+
+.projects-grid img {
+    object-fit:cover;
+    height:auto;
+}
+
+.projects-grid p {
+    padding:20px;
+    font-size:1.4rem;
+    font-weight:bold;
+    background:var(--dark);
+}
 
 /*CONTACT*/
 
 #contact {
     background:var(--dark);
-    padding:20px;
+    padding:50px;
     text-align:center;
+    margin-top:-40px;
+    border-top:40px solid transparent;
 }
 
 .contact-header {
@@ -171,36 +206,20 @@ i {
 
 .contact-links {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    justify-items: center;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    justify-items:center;
     align-items:baseline;
+    grid-gap:1rem;
 }
 
-.contact-links a {
-    color:var(--light-grey);
+.contact-links p {
     font-size:1.2rem;
 }
 
-.fa-github {
-    color:rgb(101, 101, 214);
-    background:white;
-    padding:2px 1px 0 1px;
-    border-radius:2px;
-}
-
-.fa-linkedin {
-    color:blue;
-    background:white;
-    padding:0 2px;
-    border-radius:2px;
-}
-
-.contact-links a:hover,
-.contact-links .fab:hover {
-    color:var(--pink);
-}
+/*FOOTER*/
 
 footer {
+    font-size:1.2rem;
     padding:1rem;
     background:var(--black);
     color:var(--light-grey);
@@ -212,16 +231,9 @@ footer {
     html {
         font-size:.8em;
     }
-
 }
 
 @media only screen and (max-width:500px) {
-    #banner {
-
-    }
-
-
-    
     h1 {
         font-size:3rem;
     }
